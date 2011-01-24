@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+# This file is part of qrurl released under the MIT license. 
+# See the NOTICE for more information.
+
+PYTHON_BIN=`which python`
+
+$PYTHON_BIN -OO -c "import qrurl.consumer" $@

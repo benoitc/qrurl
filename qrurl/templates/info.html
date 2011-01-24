@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Info on {{url.url}}{% endblock %}
+
+{% block content%}
+
+<img id="qr" src="/{{uid}}.qr" alt="QR code">
+<p id="qr-source">http://{{domain}}/{{uid}}.qr</p>
+
+<div id="properties">
+    <p>
+    <span class="label">Created:</label>
+    <span id="createdDate">{{url.date_creation}}</span>
+    </p>
+    <p>
+    <span class="label">Long url:</label>
+    <span id="longUrl">{{url.url}}</span>
+    </p>
+    <p>
+    <span class="label">Short url:</label>
+    <span id="shortUrl">{{domain}}/{{uid}}</span>
+    </p>
+</div>
+{% endblock %}

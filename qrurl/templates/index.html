@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if error %}
+<div id="error">{{error}}</div>
+{% endif %}
+
+<form id="furl" action="." method="post">
+    <label form="shorten">Paste your Long URL here:</label>
+    <div>
+    <input type="text" name="shorten" value=""> <input
+type="submit" id="bsubmit" value="Shorten">
+    </div>
+
+    <p class="info">All {{ domain }} URLs and click analytics 
+are public and can be shared by anyone.</p>
+
+</form>
+
+{% if url %}
+<p>The following <a class="source" href="{{url}}">{{ url }}</a> has been
+shortened to <a class="target" href="{{ shortened }}">{{ shortened }}</a>.
+See realtime info <a href="info/{{uid}}">here</a></p>
+{% endif %}
+
+{% endblock %}

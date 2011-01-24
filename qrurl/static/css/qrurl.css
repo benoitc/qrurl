@@ -1,0 +1,29 @@
+
+
+
+#properties {
+    margin-left: 1em;
+    word-break: break-all;
+}
+
+
+#qr {
+    float: right;
+    text-align: right;
+    width: 100px;
+}
+
+#qr-source {
+    clear: right;
+    color: #0E774A;
+    float: right;
+    font-size: 80%;
+    margin: 0px 10px 1.5em 0px;
+    text-align: right;
+    width: 200px;
+}
+
+.selected, .label {
+    font-weight: bolder;
+}
+
